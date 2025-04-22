@@ -1,20 +1,57 @@
 # TrumanShow
 
-A simple C# program that answers questions from a given text.
+C# Console Application for Text‑Based Q&A
 
-Files:
-the truman show script.txt: The main text.
-questions.txt: Questions to be answered.
+## Overview
 
-How It Works:
-Reads the text and questions.
-Searches for answers in the text.
-Outputs answers in the console.
+Reads a script and a set of questions, then finds and prints answers by searching the text.
 
-Example Output:
-1) When did Henri Becquerel discover radioactivity?
-1896
-   
-Instructions:
-Place the truman show script.txt and questions.txt with the executable.
-Run the program.
+## Features
+
+- Loads plain text script (`the_truman_show_script.txt`)  
+- Parses and answers questions from `questions.txt`  
+- Outputs answers with question numbering  
+
+## Prerequisites
+
+- .NET 6.0 SDK or higher
+- Windows, macOS, or Linux
+
+## Installation
+
+```bash
+git clone https://github.com/bahademircioglu/TrumanShow.git
+cd TrumanShow
+dotnet build
+```
+
+## Usage
+
+Place the script and questions files alongside the executable:
+
+```bash
+cd bin/Debug/net6.0/
+./TrumanShow.exe ../the_truman_show_script.txt ../questions.txt
+```
+
+## Project Structure
+
+```
+TrumanShow/
+├── Program.cs
+├── the_truman_show_script.txt
+├── questions.txt
+├── answers.txt       
+├── LICENSE (GPL-3.0)
+└── README.md
+```
+
+## Contributing
+
+1. Fork the repo  
+2. Make changes  
+3. Submit a pull request
+
+## License
+
+GPL‑3.0 License.
